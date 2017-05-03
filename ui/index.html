@@ -1,0 +1,60 @@
+ <!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<title>WMT'17 APE Evaluation</title>
+	</head>
+
+	<body>
+
+		<details open="open">
+			<summary>You are logged in as <span id="username">user</span> 
+				<input type="button" value="logout" id="logout" />
+			</summary>
+		</details>
+
+		<div id="message"></div>
+
+		<main>
+			<h3 id="count">This HIT consists of <span id="total">100</span> assessments of English. You have completed <span id="current">0</span>.</h3>
+
+			<article>
+				<header>Read the text below. How much do you agree with the following statement:</header>
+				<span id="statement">The black text adequately expresses the meaning of the gray text in English.</span>
+				<div id="content">
+					<span id="source">Source sentence</span>
+					<span id="target">Target sentence</span>	
+				</div>
+			</article>
+
+			<div id="selected">Selected value: <span id="selected-value"></span> %</div>
+
+			<div id="slider-wrapper">
+				<span id="minimum">0 %</span>
+				<div id="slider">
+					<span id="slider-onequarter"></span>
+					<span id="slider-middle"></span>
+					<span id="slider-threequarter"></span>
+				</div>
+				<span id="maximum">100 %</span>
+			</div>	
+
+			<input type="button" value="Next" id="next" />
+
+		</main>
+
+		<footer>
+		</footer>
+
+	</body>
+
+	<link rel="stylesheet" type="text/css" href="style/jquery-ui.min.css">
+	<script src="script/jquery-3.2.1.min.js"></script>
+	<script src="script/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script src="script/script.js"></script>
+
+</html>
